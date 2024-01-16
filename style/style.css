@@ -312,6 +312,7 @@ select {
 /* perfact-place section start */
 .perfact-place-container {
   gap: 10px;
+  margin-bottom: 100px;
 }
 .perfact-place-left {
   flex-basis: 43%;
@@ -346,6 +347,9 @@ select {
 }
 .newsletter-left form {
   display: block;
+}
+hr {
+  background: rgba(19, 19, 24, 0.1);
 }
 .newsletter-left form input {
   width: 100%;
@@ -394,6 +398,32 @@ select {
 /* main section ends */
 
 /* footer section start */
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  text-align: center;
+  padding: 110px 0px;
+  margin-top: 50px;
+}
+
+.footer-contianer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+.footer-contianer .logo h1 {
+  font-size: 2rem;
+}
+.footer-contianer * {
+  margin-bottom: 20px;
+}
+.social-icon {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.social-icon > i {
+  margin-right: 10px;
+}
 /* footer section ends */
 
 @media screen and (min-width: 576px) and (max-width: 876px) {
