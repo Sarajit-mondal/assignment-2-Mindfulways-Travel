@@ -96,7 +96,7 @@ nav {
 }
 /* banner section */
 .banner-container {
-  background-image: url("/Images/banner.png");
+  background-image: url("/Images/banner-top.jpg");
   width: 100%;
   height: 500px;
   background-position: center;
@@ -120,7 +120,7 @@ nav {
     rgba(19, 19, 24, 0.8) 0%,
     rgba(19, 19, 24, 0) 100%
   );
-  border-bottom: 1rem;
+  border-radius: 1rem;
 }
 .banner-title {
   font-size: 4rem;
@@ -454,10 +454,10 @@ footer {
 @media screen and (max-width: 600px) {
   /* nav section */
   .section-contianer {
-    margin: 0px auto;
+    margin: 30px auto;
   }
   .banner-container {
-    margin-top: -30px;
+    margin-top: -50px;
   }
   .primary-btn {
     font-size: 1rem;
@@ -483,7 +483,7 @@ footer {
   }
   .banner-input {
     flex-direction: column;
-    width: 100%;
+    width: 80%;
   }
 
   /* popular-tours-container */
