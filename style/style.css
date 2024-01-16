@@ -21,7 +21,7 @@ body {
 header,
 main,
 footer {
-  width: min(80%, 1340px);
+  width: min(80%, 1170px);
   margin: 0px auto;
 }
 .gray-color {
@@ -36,13 +36,13 @@ footer {
   font-weight: 800;
 }
 .primary-btn {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: var(--light-color);
   background-color: var(--primary-color);
   border-radius: var(--border-radius);
   border: none;
-  padding: 15px 25px;
+  padding: 12px 25px;
 }
 .element-center {
   display: flex;
@@ -93,10 +93,11 @@ nav {
 .banner-container {
   background-image: url("/Images/banner.png");
   width: 100%;
-  height: 600px;
+  height: 500px;
   background-position: center;
   background-size: cover;
   margin-top: -100px;
+  border-radius: 1rem;
 }
 .banner-contain {
   height: 100%;
@@ -263,7 +264,7 @@ select {
 .discount-card .card {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   width: 580px;
   height: 390px;
   background: rgba(255, 255, 255, 0.8);
@@ -273,7 +274,7 @@ select {
 }
 .discount-card:nth-child(2) > .card {
   left: unset;
-  right: 50%;
+  right: 40%;
 }
 .card .card-top {
   display: flex;
@@ -323,12 +324,73 @@ select {
   border-radius: 1rem;
 }
 .perfact-place-container .title {
-  line-height: 3.5rem;
+  line-height: 3rem;
 }
 .perfact-place-left * {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /* perfact-place section ends */
+
+/* newsletter section start */
+.newsletter-container {
+  gap: 30px;
+}
+.newsletter-left * {
+  margin-bottom: 10px;
+}
+.newsletter-left {
+  flex-basis: 40%;
+  border: 1px solid #ff5400;
+  padding: 40px;
+  border-radius: 1rem;
+}
+.newsletter-left form {
+  display: block;
+}
+.newsletter-left form input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  outline: none;
+}
+.newsletter-left form input:last-child {
+  background-color: var(--primary-color);
+}
+.newsletter-left form input::placeholder {
+  color: rgba(19, 19, 24, 0.3);
+  font-weight: 400;
+}
+
+.newsletter-right {
+  flex-basis: 55%;
+  position: relative;
+}
+.newsletter-right img {
+  width: 100%;
+}
+.cil {
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 1rem;
+  right: 5px;
+  top: 58%;
+  transform: rotate(-19.628deg);
+}
+.save-money {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* newsletter section ends */
 /* main section ends */
 
 /* footer section start */
