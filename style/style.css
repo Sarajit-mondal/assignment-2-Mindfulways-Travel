@@ -21,7 +21,7 @@ body {
 header,
 main,
 footer {
-  width: min(80%, 1440px);
+  width: min(80%, 1340px);
   margin: 0px auto;
 }
 .gray-color {
@@ -251,6 +251,84 @@ select {
   background: rgba(233, 68, 68, 0.05);
 }
 /* chose section ends */
+
+/* deals and discounts section start */
+.discount-card > img {
+  width: 100%;
+}
+.discount-card {
+  position: relative;
+  margin-bottom: 30px;
+}
+.discount-card .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  height: 390px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  padding: 50px;
+  transform: translateY(-50%);
+}
+.discount-card:nth-child(2) > .card {
+  left: unset;
+  right: 50%;
+}
+.card .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 24px;
+}
+.card .card-top > div {
+  display: flex;
+  align-items: center;
+}
+.card-top > div > img {
+  margin-right: 10px;
+}
+.discount-card * {
+  margin-bottom: 12px;
+}
+.card-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--secondary-color);
+  margin-top: -10px;
+}
+.card-price {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.deals-discounts-container > button {
+  display: block;
+  margin: 20px auto;
+}
+/* deals and discounts section ends */
+
+/* perfact-place section start */
+.perfact-place-container {
+  gap: 10px;
+}
+.perfact-place-left {
+  flex-basis: 43%;
+}
+.perfact-place-right {
+  flex-basis: 55%;
+}
+.perfact-place-right video {
+  width: 100%;
+  border-radius: 1rem;
+}
+.perfact-place-container .title {
+  line-height: 3.5rem;
+}
+.perfact-place-left * {
+  margin-bottom: 20px;
+}
+/* perfact-place section ends */
 /* main section ends */
 
 /* footer section start */
