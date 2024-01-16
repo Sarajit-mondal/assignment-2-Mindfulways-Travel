@@ -54,6 +54,11 @@ footer {
 }
 
 /* header section start */
+.nav-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 nav {
   padding: 50px 0px;
 }
@@ -98,6 +103,7 @@ nav {
   background-size: cover;
   margin-top: -100px;
   border-radius: 1rem;
+  border-bottom: 1rem;
 }
 .banner-contain {
   height: 100%;
@@ -114,6 +120,7 @@ nav {
     rgba(19, 19, 24, 0.8) 0%,
     rgba(19, 19, 24, 0) 100%
   );
+  border-bottom: 1rem;
 }
 .banner-title {
   font-size: 4rem;
@@ -346,7 +353,11 @@ select {
 /* perfact-place section ends */
 
 /* newsletter section start */
+
 .newsletter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 .newsletter-left * {
@@ -389,8 +400,8 @@ hr {
 }
 .cil {
   position: absolute;
-  width: 320px;
-  height: 100px;
+  width: 50%;
+  height: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -439,7 +450,173 @@ footer {
 }
 /* footer section ends */
 
-@media screen and (min-width: 576px) and (max-width: 876px) {
+/* responsive design start here */
+@media screen and (max-width: 600px) {
+  /* nav section */
+  .section-contianer {
+    margin: 0px auto;
+  }
+  .banner-container {
+    margin-top: -30px;
+  }
+  .primary-btn {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .nav-list {
+    display: none;
+  }
+  .menu {
+    display: inline;
+    color: var(--gray-color);
+  }
+  .logo .web-name {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+  }
+  .logo img {
+    width: 30px;
+  }
+  .banner-title {
+    font-size: 1.4rem;
+  }
+  .banner-input {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* popular-tours-container */
+  .popular-tours-contaienr {
+    flex-direction: column;
+  }
+  .popular-tours-image > img {
+    width: 100%;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .gray-color {
+    font-size: 0.9rem;
+  }
+
+  /* destination-image-contianer */
+  .destination-image-contianer {
+    grid-template-columns: 1fr;
+  }
+  .destination-image-contianer > div > p {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .image1 {
+    grid-column: span 1;
+  }
+  .image2 {
+    grid-column: span 1;
+  }
+  .image3 {
+    grid-column: span 1;
+  }
+  .image4 {
+    grid-column: span 1;
+  }
+  .image5 {
+    grid-column: span 1;
+  }
+  .image6 {
+    grid-column: span 1;
+  }
+  .image7 {
+    grid-column: span 1;
+  }
+
+  /* why choose us */
   .choose-service-cards {
+    flex-direction: column;
+  }
+
+  /* discount section */
+  .discount-card > img {
+    height: 500px;
+  }
+  .discount-card {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .discount-card .card {
+    position: absolute;
+    right: unset;
+    top: unset;
+    bottom: 0;
+    left: 50%;
+    width: 303px;
+    height: 297px;
+    padding: 20px;
+    transform: translateX(-50%);
+  }
+  .card > .gray-color {
+    font-size: 0.8rem;
+    line-height: 16px;
+  }
+
+  .card .card-top {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .card .card-top > div {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .card-top > div > img {
+    margin-right: 5px;
+  }
+  .discount-card * {
+    margin-bottom: 5px;
+  }
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-top: -10px;
+  }
+  .card-price {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .deals-discounts-container > button {
+    display: block;
+    margin: 20px auto;
+  }
+  .discount-card:nth-child(2) > .card {
+    left: 50%;
+  }
+
+  /* .perfact-place-container */
+  .perfact-place-container {
+    flex-direction: column;
+  }
+
+  /* .newsletter-container */
+  .newsletter-container {
+    flex-direction: column;
+  }
+  .save-money {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  .newsletter-frist .element-center {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-contianer .logo h1 {
+    font-size: 1.3rem;
   }
 }
+
+/* @media screen and (min-width: 576px) and (max-width: 876px) {
+} */
